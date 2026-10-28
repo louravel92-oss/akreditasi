@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Catatan Akreditasi RS</title>
+<title>Catatan Standar Akreditasi RS</title>
 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#fffdf9;--ink:#2a2a35;--card:#fff;--pink:#ffd1d1;--blue:#cdeaff;--green:#c9f5c9;--lav:#e6defa;--yel:#fff1b8;--hl:#ffd9c2;--hl2:#c8f2d6;--line:#e9e2d8;--ttl:#1c1c28;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -12,191 +12,253 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 'Comic Neue','Comic Sans MS',system-ui,sans-serif}
 .wrap{max-width:860px;margin:0 auto;padding:0 16px 40px}
-.bar{height:22px;background:var(--pink);border-radius:0 0 8px 8px}
-.bar.b{border-radius:8px 8px 0 0;margin-top:30px}
+.bar{height:22px;background:var(--green);border-radius:0 0 8px 8px}.bar.b{border-radius:8px 8px 0 0;margin-top:30px}
 h1,h2,h3{font-family:'Lilita One','Arial Black',system-ui,sans-serif;color:var(--ttl);font-weight:400;margin:0}
-h1{font-size:clamp(38px,9vw,64px);text-align:center;letter-spacing:1px;margin-top:18px}
-.sub{background:var(--blue);text-align:center;padding:10px;border-radius:6px;font-family:'Lilita One',system-ui,sans-serif;font-size:20px;margin:8px 0 20px;color:var(--ttl)}
+h1{font-size:clamp(34px,8vw,58px);text-align:center;margin-top:18px;line-height:1.15}
+.sub{background:var(--green);text-align:center;padding:10px;border-radius:6px;font-family:'Lilita One',system-ui,sans-serif;font-size:19px;margin:8px 0 20px;color:var(--ttl)}
 .sec{background:var(--card);border:2px dashed var(--line);border-radius:14px;padding:16px 18px;margin:18px 0}
-h2{font-size:22px;padding:6px 12px;border-radius:6px;margin:-4px 0 12px;display:block}
+h2{font-size:22px;padding:6px 12px;border-radius:6px;margin:-4px 0 12px}
 .p h2{background:var(--pink)}.bl h2{background:var(--blue)}.g h2{background:var(--green)}.l h2{background:var(--lav)}.y h2{background:var(--yel)}
 h3{font-size:17px;margin:14px 0 4px}
 mark{background:linear-gradient(transparent 12%,var(--hl) 12%);color:inherit;padding:0 3px;border-radius:4px}
 mark.g2{background:linear-gradient(transparent 12%,var(--hl2) 12%)}
-ul,ol{margin:4px 0 4px;padding-left:22px}li{margin:2px 0}
+ul,ol{margin:4px 0;padding-left:22px}li{margin:2px 0}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
-.chip{background:var(--bg);border:2px solid var(--line);border-radius:10px;padding:4px 10px;font-size:14.5px}
-.chip b{display:block}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
-.box{border-radius:10px;padding:8px 12px;background:var(--bg);border:2px solid var(--line)}
-.box.k1{border-color:#f4a7a7}.box.k2{border-color:#8ed0f5}.box.k3{border-color:#8fdc9f}.box.k4{border-color:#c2aef0}
+.chip{background:var(--bg);border:2px solid var(--line);border-radius:10px;padding:4px 10px;font-size:14.5px}.chip b{display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.box{border-radius:10px;padding:8px 12px;background:var(--bg);border:2px solid var(--line);font-size:15px}
+.box ul,.box ol{padding-left:18px}
+.k1{border-color:#f4a7a7}.k2{border-color:#8ed0f5}.k3{border-color:#8fdc9f}.k4{border-color:#c2aef0}
 .note{background:var(--yel);border-radius:10px;padding:8px 12px;margin:10px 0;font-size:15px}
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14.5px}
 th,td{border:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
 th{background:var(--blue);font-family:'Lilita One',system-ui,sans-serif;font-weight:400}
 td.k{background:var(--lav);font-weight:700}tr.hot td{background:var(--yel)}
-.tl{border-left:4px solid var(--pink);margin:6px 0 6px 8px;padding-left:14px}
-.tl div{margin:6px 0}.tl b{background:var(--pink);border-radius:6px;padding:0 7px;margin-right:6px}
+.tl{border-left:4px solid var(--pink);margin:6px 0 6px 8px;padding-left:14px}.tl div{margin:6px 0}
+.tl b{background:var(--pink);border-radius:6px;padding:0 7px;margin-right:6px}
+.big{font-family:'Lilita One',system-ui,sans-serif;font-size:26px;color:var(--ttl);display:block;line-height:1.2}
 .foot{text-align:center;font-size:13px;opacity:.8}
 </style>
 </head>
 <body>
 <div class="bar"></div>
 <div class="wrap">
-<h1>AKREDITASI RS</h1>
-<div class="sub">Ringkasan Pertemuan IX · SNARS &amp; STARKES<br><span style="font-size:14px;font-family:'Comic Neue',sans-serif">Akreditasi dan Manajemen Risiko · D3 RMIK Poltekkes Kemenkes Yogyakarta</span></div>
+<h1>STANDAR AKREDITASI RS</h1>
+<div class="sub">Ringkasan Pertemuan X · KMK 1596/2024<br><span style="font-size:14px;font-family:'Comic Neue',sans-serif">Kerangka Umum · Manajemen RS · Berfokus pada Pasien · SKP &amp; Prognas</span></div>
 
-<div class="sec p"><h2>1 · Pengertian &amp; Tujuan</h2>
-<p><mark>Akreditasi</mark> = <mark>pengakuan terhadap mutu pelayanan RS</mark> setelah dinilai memenuhi <mark>standar akreditasi</mark> (KMK 1596/2024).</p>
-<div class="chips"><div class="chip"><b>Pengakuan</b>oleh lembaga berwenang, bukan RS sendiri</div><div class="chip"><b>Penilaian (survei)</b>telusur dokumen, wawancara, observasi, simulasi</div><div class="chip"><b>Standar</b>tolok ukur dari Menkes</div><div class="chip"><b>Mutu pelayanan</b>mutu &amp; keselamatan layanan</div></div>
-<h3>Tujuan &amp; manfaat</h3>
-<ul><li>Meningkatkan <mark>mutu &amp; keselamatan pasien</mark></li><li>Melindungi pasien, masyarakat, tenaga RS, dan RS</li><li>RS bekerja berdasar standar, kebijakan, prosedur jelas</li><li>Dasar pembinaan pemerintah &amp; kerja sama <mark>BPJS Kesehatan</mark></li></ul>
-<h3>Landasan hukum</h3>
-<ul><li><mark>UU 17/2023</mark> tentang Kesehatan (dulu UU 44/2009 tentang RS)</li><li>Permenkes 34/2017 → <mark>Permenkes 12/2020</mark> (siklus tiga tahunan)</li><li>KMK 1128/2022 &amp; <mark>KMK 1596/2024</mark> (standar akreditasi RS)</li></ul>
-<h3>Istilah penting</h3>
-<div class="tw"><table><tr><th>Istilah</th><th>Arti singkat</th></tr>
-<tr><td class="k">Kelompok standar</td><td>Pengelompokan standar menurut fungsi penting RS</td></tr>
-<tr><td class="k">Bab</td><td>Bagian dalam kelompok, punya singkatan (TKRS, PMKP, MRMIK)</td></tr>
-<tr><td class="k">Standar</td><td>Pernyataan mutu yang harus dipenuhi pada satu topik</td></tr>
-<tr><td class="k">Maksud &amp; tujuan</td><td>Latar &amp; tujuan sebuah standar</td></tr>
-<tr class="hot"><td class="k">Elemen penilaian (EP)</td><td>Butir terukur yang dinilai surveior; <mark>dasar skor akreditasi</mark></td></tr>
-<tr><td class="k">LPA</td><td>Lembaga Penyelenggara Akreditasi: independen, survei &amp; menetapkan status</td></tr></table></div>
+<div class="sec bl"><h2>0 · Tujuan Belajar &amp; Peta Materi</h2>
+<p>Pertemuan X terdiri dari 4 materi. Tiap materi punya tujuan pembelajaran sendiri:</p>
+<div class="grid">
+<div class="box k1"><b>A · Kerangka Umum Standar</b><ol><li>Jelaskan pengertian, tujuan, ruang lingkup akreditasi RS</li><li>Sebut 4 kelompok standar di KMK 1596/2024</li><li>Baca anatomi standar: gambaran umum, maksud &amp; tujuan, EP</li><li>Jelaskan skor, metode, dan bukti yang dinilai</li><li>Uraikan alur: persiapan → pasca akreditasi</li></ol></div>
+<div class="box k2"><b>B · Kelompok Manajemen RS</b><ol><li>Jelaskan tujuan &amp; kelompok standar akreditasi RS</li><li>Kelompokkan MRMIK jadi 4 tema belajar</li><li>Hubungkan MRMIK &amp; PMKP dengan mutu data dan keselamatan pasien</li><li>Kenali risiko informasi &amp; contoh pengendaliannya</li></ol></div>
+<div class="box k3"><b>C · Kelompok Berfokus pada Pasien</b><ol><li>Jelaskan alur pelayanan dari masuk hingga pulang/rujuk</li><li>Kenali standar AKP, HPK, PP, PAP, PAB, PKPO, KE</li><li>Identifikasi bukti dokumentasi yang relevan di RM</li><li>Pahami peran RMIK: kelengkapan, keterlacakan, kesinambungan informasi</li></ol></div>
+<div class="box k4"><b>D · Kelompok SKP &amp; Prognas</b><ol><li>Jelaskan 6 Sasaran Keselamatan Pasien</li><li>Jelaskan 6 Program Nasional</li><li>Hubungkan SKP 1 dan pencatatan/pelaporan Prognas dengan pekerjaan PMIK</li></ol></div>
+</div>
+<h3>Peta materi A (kerangka umum)</h3>
+<div class="chips"><div class="chip"><b>A</b>Dasar akreditasi: mutu, definisi, dasar hukum</div><div class="chip"><b>B</b>Kelompok standar: 4 kelompok</div><div class="chip"><b>C</b>Anatomi standar: cara baca standar &amp; EP</div><div class="chip"><b>D</b>Penilaian: skor, metode, bukti</div><div class="chip"><b>E</b>Alur: persiapan hingga pasca survei</div><div class="chip"><b>F</b>Penutup: poin kunci &amp; peran PMIK</div></div>
 </div>
 
-<div class="sec bl"><h2>2 · Perkembangan Akreditasi RS</h2>
-<div class="tl">
-<div><b>1995</b>KARS mulai akreditasi, standar <mark>5 pelayanan</mark> → 12 → 16 pelayanan</div>
-<div><b>2012</b>standar berorientasi pasien</div>
-<div><b>2015</b>KARS jadi lembaga independen</div>
-<div><b>2017–18</b><mark>SNARS Edisi 1</mark> (16 bab) + Permenkes 34/2017, berlaku 2018</div>
-<div><b>2020</b>Permenkes 12/2020; KARS + lima lembaga independen lain</div>
-<div><b>2022</b>KMK 1128/2022: 16 bab, 4 kelompok</div>
-<div><b>4 Okt 2024</b><mark>KMK 1596/2024 (STARKES)</mark> berlaku, mencabut KMK 1128/2022</div>
-<div><b>31 Des 2024</b><mark>3.080 dari 3.216 RS (96%)</mark> terakreditasi</div>
-<div><b>2026</b>KMK 62/2026: 15 LPA, 8 untuk RS</div></div>
-<h3>5 pola perubahan</h3>
-<ol><li><mark>Unit → sistem</mark> (fungsi RS yang saling terhubung)</li><li><mark>Standar lembaga → standar nasional</mark></li><li><mark>Satu lembaga → banyak lembaga</mark> (setelah 2020)</li><li><mark>Dokumen → praktik</mark> (termasuk telusur rekam medis)</li><li><mark>Kertas → elektronik</mark> (Permenkes 24/2022, bab MRMIK)</li></ol>
+<div class="sec g"><h2>1 · Kerangka Umum Standar</h2>
+<h3>Pelayanan bermutu = 7 karakter</h3>
+<p>Menurut KMK, pelayanan yang bermutu memiliki tujuh karakter, dan mutunya dijaga lewat <mark>peningkatan mutu internal dan eksternal</mark>.</p>
+<div class="chips"><div class="chip">Aman</div><div class="chip">Tepat waktu</div><div class="chip">Efisien</div><div class="chip">Efektif</div><div class="chip">Adil</div><div class="chip">Berorientasi pasien</div><div class="chip">Terintegrasi</div></div>
+<div class="grid"><div class="box k1"><b>Mutu internal</b> (<mark>hal terpenting</mark> untuk menjamin mutu pelayanan)<ul><li>penetapan, pengukuran, pelaporan, evaluasi indikator mutu</li><li>pelaporan insiden keselamatan pasien</li><li>manajemen risiko</li></ul></div><div class="box k2"><b>Mutu eksternal</b> (bagian dari upaya peningkatan mutu secara keseluruhan)<ul><li>perizinan</li><li>sertifikasi</li><li><mark>akreditasi</mark></li></ul></div></div>
+<p>Keduanya berjalan <mark>berkesinambungan (continuous quality improvement / CQI)</mark>.</p>
+<h3>Akreditasi &amp; data</h3>
+<p><mark>Akreditasi</mark> = pengakuan terhadap mutu pelayanan RS setelah dinilai memenuhi standar akreditasi yang disetujui Pemerintah.</p>
+<div class="chips"><div class="chip"><b>3.178</b>RS teregistrasi</div><div class="chip"><b>2.925 (92%)</b>sudah terakreditasi</div><div class="chip"><b>253 (8%)</b>belum terakreditasi</div></div>
+<p style="font-size:14px;opacity:.85">Data Kemenkes per 15 April 2024, dikutip dalam KMK.</p>
+<h3>Dasar penyusunan KMK 1596/2024</h3>
+<div class="grid">
+<div class="box"><b>Penetapan</b><br>Ditetapkan <mark>4 Oktober 2024</mark>; mencabut KMK 1128/2022</div>
+<div class="box"><b>Acuan benchmarking</b><br><mark>SNARS Edisi 1.1, JCI Standards for Hospital ed. 7, prinsip standar ISQua ed. 5</mark></div>
+<div class="box"><b>Pembahasan</b><br>Melibatkan lembaga akreditasi, organisasi profesi, asosiasi RS, RS, dan akademisi</div>
+<div class="box"><b>Penyederhanaan</b><br>Standar dibuat <mark>lebih mudah dipahami</mark> dan dapat dilaksanakan RS</div></div>
+<h3>Tujuan &amp; ruang lingkup</h3>
+<div class="grid"><div class="box k1"><b>Tujuan</b><ol><li>Meningkatkan mutu dan keselamatan pasien di RS</li><li>Acuan lembaga akreditasi dan RS dalam penyelenggaraan akreditasi</li><li>Acuan Kemenkes dan dinas kesehatan dalam pembinaan dan evaluasi mutu &amp; keselamatan pasien</li></ol></div><div class="box k2"><b>Ruang lingkup</b><br>Penyelenggaraan akreditasi: <b>persiapan → pelaksanaan penilaian → pasca akreditasi</b>.<br>Standar meliputi: gambaran umum, maksud dan tujuan, elemen penilaian pada tiap kelompok standar.</div></div>
+<div class="note">⚖️ <mark>Dua sisi standar</mark>: <b>good clinical governance</b> (penyediaan pelayanan bagi pasien) + <b>good corporate governance</b> (organisasi RS yang aman, efektif, dan dikelola dengan baik). Standar dikelompokkan menurut <mark>fungsi-fungsi penting</mark> yang umum dalam organisasi perumahsakitan.</div>
+<h3>4 kelompok standar (total <mark>228 standar · 806 EP</mark>)</h3>
+<div class="grid"><div class="box k1"><b>Manajemen RS</b><br>7 bab · 107 standar · 404 EP</div><div class="box k2"><b>Pelayanan Berfokus Pasien</b><br>7 bab · 101 standar · 332 EP</div><div class="box k3"><b>SKP</b><br>6 sasaran · 8 standar · 24 EP</div><div class="box k4"><b>Prognas</b><br>6 program · 12 standar · 46 EP</div></div>
+<p style="font-size:14px;opacity:.85">Total 228 standar &amp; 806 EP adalah hasil penghitungan dari KMK.</p>
+<div class="tw"><table><tr><th>Singkatan</th><th>Kelompok Manajemen RS</th><th>Singkatan</th><th>Kelompok Berfokus pada Pasien</th></tr>
+<tr><td class="k">TKRS</td><td>Tata Kelola Rumah Sakit</td><td class="k">AKP</td><td>Akses dan Kontinuitas Pelayanan</td></tr>
+<tr><td class="k">KPS</td><td>Kualifikasi dan Pendidikan Staf</td><td class="k">HPK</td><td>Hak Pasien dan Keluarga</td></tr>
+<tr><td class="k">MFK</td><td>Manajemen Fasilitas dan Keselamatan</td><td class="k">PP</td><td>Pengkajian Pasien</td></tr>
+<tr><td class="k">PMKP</td><td>Peningkatan Mutu dan Keselamatan Pasien</td><td class="k">PAP</td><td>Pelayanan dan Asuhan Pasien</td></tr>
+<tr class="hot"><td class="k">MRMIK</td><td>Manajemen Rekam Medik dan Informasi Kesehatan</td><td class="k">PAB</td><td>Pelayanan Anestesi dan Bedah</td></tr>
+<tr><td class="k">PPI</td><td>Pencegahan dan Pengendalian Infeksi</td><td class="k">PKPO</td><td>Pelayanan Kefarmasian dan Penggunaan Obat</td></tr>
+<tr><td class="k">PPK</td><td>Pendidikan dalam Pelayanan Kesehatan</td><td class="k">KE</td><td>Komunikasi dan Edukasi</td></tr></table></div>
+<div class="note">🧭 Kelompok Berfokus pada Pasien = <mark>satu alur pasien, bukan tujuh bab terpisah</mark>.</div>
+<h3>6 SKP &amp; 6 Prognas</h3>
+<div class="grid"><div class="box"><b>Sasaran Keselamatan Pasien</b><ol><li>Identifikasi pasien dengan benar</li><li>Komunikasi yang efektif</li><li>Keamanan obat yang harus diwaspadai</li><li>Sisi, prosedur, dan pasien yang benar saat tindakan</li><li>Pengurangan risiko infeksi</li><li>Pengurangan risiko cedera akibat jatuh</li></ol></div><div class="box"><b>Program Nasional</b><ol><li>Kesehatan ibu dan bayi</li><li>Penurunan kesakitan TBC</li><li>Penurunan kesakitan HIV/AIDS</li><li>Penurunan stunting dan wasting</li><li>Pelayanan keluarga berencana RS</li><li>Pengendalian resistansi antimikroba</li></ol></div></div>
 </div>
 
-<div class="sec g"><h2>3 · Versi 2022 vs 2024 (STARKES)</h2>
-<div class="tw"><table><tr><th></th><th>KMK 1128/2022</th><th>KMK 1596/2024</th></tr>
-<tr><td class="k">Status</td><td>Dicabut 4 Okt 2024</td><td><mark class="g2">Berlaku</mark> sejak 4 Okt 2024</td></tr>
-<tr><td class="k">Struktur</td><td colspan="2">4 kelompok standar, 16 bab (<mark>sama</mark>); RS kelas D pratama punya standar sendiri (KMK 1094/2024)</td></tr></table></div>
-<div class="tw" style="margin-top:10px"><table><tr><th>Kelompok</th><th>Bab</th><th>Standar</th><th>EP</th></tr>
-<tr><td class="k">Manajemen RS</td><td>7</td><td>107 → 107</td><td>403 → 404</td></tr>
-<tr><td class="k">Pelayanan Berfokus Pasien</td><td>7</td><td>101 → 101</td><td>330 → 332</td></tr>
-<tr><td class="k">Sasaran Keselamatan Pasien</td><td>1</td><td>8 → 8</td><td>24 → 24</td></tr>
-<tr class="hot"><td class="k">Program Nasional</td><td>1</td><td>10 → <b>12</b></td><td>32 → <b>46</b></td></tr>
-<tr class="hot"><td class="k">Total</td><td>16</td><td>226 → <b>228</b></td><td>789 → <b>806</b></td></tr></table></div>
-<div class="note">💡 <mark>+2 standar</mark> (semua di Program Nasional) &amp; <mark>+17 EP</mark> (14 di Program Nasional). Kelompok yang bertambah paling besar = <mark>Program Nasional</mark>.</div>
-<h3>Isi 16 bab (sama di kedua versi)</h3>
-<div class="grid"><div class="box k1"><b>Manajemen RS (7)</b><br>TKRS, PMKP, KPS, MFK, PPI, PPK, MRMIK</div><div class="box k2"><b>Pelayanan Berfokus Pasien (7)</b><br>AKP, PP, PAP, PAB, PKPO, HPK, KE</div><div class="box k3"><b>SKP (1 bab, 6 sasaran)</b><br>identifikasi, komunikasi, obat waspada, bedah, infeksi, jatuh</div><div class="box k4"><b>Program Nasional (1 bab, 6 program)</b><br>KIA, TB, HIV/AIDS, gizi, KB RS, resistensi antimikroba</div></div>
-<h3>Penekanan baru 2024</h3>
-<div class="chips"><div class="chip">💾 <b>RME</b>MRMIK: RM elektronik &amp; terhubung <mark>SATUSEHAT</mark></div><div class="chip">🧠 <b>Kesehatan jiwa</b>PAP 2.3 &amp; 2.4, risiko bunuh diri</div><div class="chip">💊 <b>Resistensi antimikroba</b>PPRA, antimikroba bijak</div><div class="chip">⚖️ <b>Anti-fraud</b>TKRS: direktur &amp; dewan pengawas</div><div class="chip">📈 <b>Mutu &amp; audit klinis</b>PMKP 3 &amp; 7</div><div class="chip">🤝 <b>Kredensialing BPJS</b>EP masuk standar</div></div>
+<div class="sec bl"><h2>2 · Anatomi Standar &amp; Penilaian</h2>
+<div class="chips"><div class="chip"><b>Gambaran umum</b>latar belakang &amp; konteks topik standar</div><div class="chip"><b>Standar</b>pernyataan yang harus dipenuhi RS</div><div class="chip"><b>Maksud &amp; tujuan</b>penjelasan &amp; rincian yang diharapkan dari standar</div><div class="chip"><b>Elemen penilaian</b>butir yang dinilai &amp; diberi skor surveior</div></div>
+<p>Skor diberikan pada tiap elemen penilaian (EP) <mark>berdasarkan bukti yang ditemukan</mark>.</p>
+<h3>Contoh membaca standar SKP 1</h3>
+<div class="tw"><table><tr><th>Bagian</th><th>Isi</th></tr>
+<tr><td class="k">Standar</td><td>RS menerapkan proses untuk menjamin ketepatan identifikasi pasien.</td></tr>
+<tr><td class="k">Maksud &amp; tujuan</td><td>Identifikasi memakai minimal <mark>2 identitas</mark> (nama lengkap dan tanggal lahir/bar code/NIK), <mark>bukan nomor kamar</mark>. Dilakukan saat terapi, tindakan, sebelum pemeriksaan diagnostik, dan penyajian makanan.</td></tr>
+<tr><td class="k">Elemen penilaian</td><td><ol><li>Regulasi sasaran keselamatan pasien</li><li>Proses identifikasi minimal 2 identitas</li><li>Pasien diidentifikasi pada 4 situasi</li><li>Situasi khusus dan pelabelan</li></ol></td></tr></table></div>
+<h3>Skor tiap EP</h3>
+<div class="tw"><table><tr><th>Kategori</th><th>Pemenuhan</th><th>Skor</th></tr>
+<tr><td class="k">TL · Terpenuhi Lengkap</td><td>≥ 80%</td><td><mark class="g2">10</mark></td></tr>
+<tr><td class="k">TS · Terpenuhi Sebagian</td><td>20% s.d &lt;80%</td><td>5</td></tr>
+<tr><td class="k">TT · Tidak Terpenuhi</td><td>&lt; 20%</td><td>0</td></tr>
+<tr><td class="k">TDD · Tidak Dapat Diterapkan</td><td>EP tidak berlaku di RS</td><td>–</td></tr></table></div>
+<p>Skor ditentukan dari <mark>kelengkapan dokumen, hasil telusur, kunjungan lapangan, simulasi, wawancara, dan klarifikasi</mark>.</p>
+<h3>4 metode penilaian</h3>
+<div class="chips"><div class="chip"><b>Telaah dokumen</b>dikirim lewat sistem informasi lembaga akreditasi, lalu dievaluasi &amp; diklarifikasi</div><div class="chip"><b>Observasi</b>surveior mengamati langsung pelaksanaan pelayanan di lapangan</div><div class="chip"><b>Wawancara</b>dengan staf, pasien, keluarga, dan pengunjung</div><div class="chip"><b>Simulasi</b>staf diminta memperagakan prosedur sesuai regulasi &amp; standar</div></div>
+<div class="note">📌 <mark>Dokumen saja tidak cukup</mark>: bukti pelaksanaan harus ditemukan di lapangan.</div>
+<h3>Bukti yang dinilai surveior</h3>
+<div class="grid"><div class="box k1"><b>Bukti kualitatif</b><ul><li>Kepatuhan konsisten di semua unit terkait</li><li>Wawancara sesuai standar dan dibuktikan dokumen</li><li>Regulasi (kebijakan &amp; SPO) lengkap</li></ul></div><div class="box k2"><b>Bukti berpersentase</b><ul><li>Dokumen rapat</li><li>Dokumen pelatihan</li><li>Dokumen orientasi staf</li><li>Observasi pelaksanaan</li><li>Simulasi staf</li><li><mark>Kelengkapan rekam medis</mark></li></ul></div></div>
+<div class="tw"><table><tr><th>Bukti berpersentase</th><th>Kategori</th><th>Skor</th></tr>
+<tr><td class="k">80–100%</td><td>TL</td><td>10</td></tr><tr><td class="k">50% s.d &lt;80%</td><td>TS</td><td>5</td></tr><tr><td class="k">&lt;50%</td><td>TT</td><td>0</td></tr></table></div>
+<div class="note">🗂️ <b>Fokus PMIK, telaah RM tertutup</b>: menilai kelengkapan RM saat dilakukan telaah. Survei awal = RM <mark>4 bulan</mark> sebelum survei; survei ulang = RM <mark>12 bulan</mark> sebelum survei.</div>
+<div class="tw"><table><tr><th>Contoh hasil telaah (dalam KMK)</th><th>Persentase</th><th>Kategori</th></tr>
+<tr><td class="k">9 dari 10 RM lengkap</td><td>90%</td><td>TL</td></tr><tr><td class="k">5 dari 10 RM lengkap</td><td>50%</td><td>TS</td></tr><tr><td class="k">4 dari 10 RM lengkap</td><td>40%</td><td>TT</td></tr></table></div>
 </div>
 
-<div class="sec y"><h2>4 · Kaitan dengan Perekam Medis</h2>
-<ul><li>Bab <mark>MRMIK</mark> = bab utama yang ditelusur di unit RM (sumber sekunder: 13 standar, cek dokumen asli)</li><li><mark>2.942 RS (90,58%)</mark> sudah RME per 2 Jan 2025</li><li>UU 17/2023: RM dijaga <mark>kerahasiaannya</mark>, dibubuhi <mark>nama, waktu, tanda tangan</mark>, segera dilengkapi</li><li>Bab lain: PMKP (data mutu), SKP (identifikasi pasien), HPK (hak atas isi RM), TKRS (tata kelola informasi)</li></ul>
-<h3>Dokumentasi rekam medis</h3>
-<div class="chips"><div class="chip"><b>Legal</b>bukti pelayanan</div><div class="chip"><b>Lengkap &amp; akurat</b>semua tindakan &amp; keputusan</div><div class="chip"><b>CDI</b>dokumentasi jelas, mendukung koding</div><div class="chip"><b>Informed consent</b>setelah informasi memadai</div><div class="chip"><b>Koding tepat</b>untuk klaim &amp; statistik</div><div class="chip"><b>Kerahasiaan</b>cegah akses tak berwenang</div></div>
+<div class="sec p"><h2>3 · Alur Akreditasi</h2>
+<h3>Persiapan</h3>
+<ol><li><b>Penuhi persyaratan</b>: dokumen pelayanan &amp; perizinan, kompetensi staf melalui pelatihan, kesiapan fasilitas</li><li><b><mark>Penilaian mandiri</mark></b>: dilakukan periodik untuk melihat kemampuan RS memenuhi standar</li><li><b>Pimpinan menyatakan siap</b>: RS yang dinilai mampu oleh pimpinan mengajukan permohonan survei</li><li><b>Pilih lembaga</b>: LPA dipilih RS secara <mark>sukarela</mark></li></ol>
+<h3>7 syarat mengajukan survei</h3>
+<ol><li>Perizinan berusaha berlaku &amp; teregistrasi di Kemenkes</li><li>Direktur: tenaga medis/kesehatan atau profesional berkompetensi manajemen RS</li><li>Izin Pengelolaan Limbah Cair (IPLC) masih berlaku</li><li>Kerja sama pengolah/transporter limbah B3 berizin, atau izin alat pengolah</li><li>Seluruh tenaga medis pemberi asuhan punya <mark>STR &amp; SIP</mark> (atau surat tugas)</li><li>Bersedia melaksanakan kewajiban peningkatan mutu &amp; keselamatan pasien</li><li><mark>SPA minimal 60%</mark> menurut ASPAK dan tervalidasi 100%</li></ol>
+<h3>Pelaksanaan penilaian</h3>
+<div class="tl"><div><b>1</b><b style="background:none;padding:0">Persiapan &amp; penjelasan survei</b>: lembaga menjelaskan seluruh rangkaian kegiatan akreditasi (daring dan/atau luring)</div><div><b>2</b><b style="background:none;padding:0">Penyampaian &amp; pemeriksaan dokumen</b>: RS kirim dokumen lewat sistem informasi; lembaga evaluasi &amp; klarifikasi</div><div><b>3</b><b style="background:none;padding:0">Telusur &amp; kunjungan lapangan</b>: observasi, wawancara, simulasi untuk memastikan lapangan sesuai dokumen</div><div><b>4</b><b style="background:none;padding:0">Penilaian</b>: skor EP dari dokumen, telusur, simulasi, wawancara, klarifikasi</div><div><b>5</b><b style="background:none;padding:0">Penutupan</b>: surveior sampaikan hal penting &amp; bagian yang perlu diperbaiki</div></div>
+<h3>Lama telusur &amp; jumlah surveior</h3>
+<div class="tw"><table><tr><th>Klasifikasi</th><th>Kelas</th><th>Hari</th><th>Surveior</th></tr>
+<tr><td class="k">RS Umum</td><td>A</td><td>3</td><td>4</td></tr><tr><td class="k">RS Umum</td><td>B</td><td>2</td><td>3</td></tr><tr><td class="k">RS Umum</td><td>C</td><td>2</td><td>2</td></tr><tr><td class="k">RS Umum</td><td>D</td><td>2</td><td>2</td></tr>
+<tr><td class="k">RS Khusus</td><td>A</td><td>2</td><td>3</td></tr><tr><td class="k">RS Khusus</td><td>B</td><td>2</td><td>2</td></tr><tr><td class="k">RS Khusus</td><td>C</td><td>2</td><td>2</td></tr></table></div>
+<div class="note">🤝 <b>Kredensialing BPJS Kesehatan</b>: standar memuat EP kredensialing. Bila akreditasi &amp; kredensialing berlangsung di tahun yang sama, penilaiannya <mark>dilakukan bersamaan</mark>; EP kredensialing dinilai BPJS dengan instrumennya.</div>
+<h3>Pasca akreditasi</h3>
+<div class="chips"><div class="chip"><b>Maks. 14 hari kerja</b>lembaga melaporkan hasil akreditasi ke Kemenkes setelah survei</div><div class="chip"><b>Maks. 21 hari</b>sertifikat (memuat masa berlaku) disampaikan setelah survei</div><div class="chip"><b>Bersama sertifikat</b>rekomendasi perbaikan diserahkan</div><div class="chip"><b>Maks. 45 hari</b>RS kirim <mark>PPS</mark> (Perencanaan Perbaikan Strategi) sejak menerima rekomendasi</div><div class="chip"><b>Dalam 3–6 bulan</b>akreditasi ulang untuk standar yang pemenuhannya &lt;80%</div></div>
+<h3>Poin kunci &amp; peran PMIK</h3>
+<div class="grid"><div class="box k1"><b>Poin kunci</b><ul><li>Akreditasi mengakui mutu pelayanan RS yang memenuhi standar</li><li>Standar terbagi dalam 4 kelompok</li><li>Penilaian pada elemen penilaian (EP)</li><li>Skor: TL 10, TS 5, TT 0, atau TDD</li><li>Bukti harus ada di dokumen dan di lapangan</li></ul></div><div class="box k2"><b>Peran PMIK</b><ul><li>Jaga kelengkapan &amp; kerahasiaan RM (<mark>MRMIK</mark>)</li><li>Pastikan identifikasi pasien tepat (<mark>SKP 1</mark>)</li><li>Olah data indikator mutu &amp; pelaporan insiden (<mark>PMKP</mark>)</li><li>Catat &amp; laporkan kasus prognas, mis. TBC</li></ul></div></div>
 </div>
 
-<div class="sec l"><h2>5 · Mutu, Keselamatan &amp; Risiko</h2>
-<ul><li><mark>Mutu</mark>: sesuai standar; aman, efektif, efisien, tepat waktu, adil, berorientasi pasien</li><li><mark>CQI</mark>: perbaikan terus-menerus (ukur → evaluasi → perbaiki)</li><li><mark>Safety culture</mark>: keselamatan jadi prioritas utama semua tenaga kesehatan</li></ul>
-<h3>6 Sasaran Keselamatan Pasien</h3>
-<ol><li>Identifikasi pasien: minimal <mark>2 identitas</mark></li><li>Komunikasi efektif <mark>SBAR</mark> (Situation, Background, Assessment, Recommendation)</li><li>Keamanan obat (<i>high alert</i>)</li><li>Ketepatan lokasi, prosedur, pasien operasi</li><li>Pencegahan infeksi</li><li>Pencegahan pasien jatuh</li></ol>
-<h3>Insiden &amp; alat risiko</h3>
-<div class="tw"><table><tr><th>Jenis</th><th>Arti</th></tr>
-<tr><td class="k">KNC</td><td>Nyaris cedera: dicegah <mark class="g2">sebelum mengenai pasien</mark></td></tr>
-<tr><td class="k">KTC</td><td>Mengenai pasien, <b>tidak</b> cedera</td></tr>
-<tr><td class="k">KTD</td><td>Menyebabkan cedera / perawatan lebih lama</td></tr>
-<tr class="hot"><td class="k">Sentinel</td><td>Kematian, cacat permanen, dampak berat</td></tr></table></div>
-<ul><li><mark>RCA</mark> = cari akar penyebab (reaktif)</li><li><mark>FMEA</mark> = identifikasi risiko proaktif</li><li>Sistem <mark>pelaporan insiden</mark> untuk belajar &amp; perbaikan</li></ul>
-<h3>PPI · MFK · Komunikasi</h3>
-<div class="grid"><div class="box k1"><b>PPI</b><br>hand hygiene, APD, bundle, limbah medis, surveilans, antibiotik rasional</div><div class="box k2"><b>MFK</b><br>bencana, <mark>Kode Merah</mark> (api), <mark>Kode Biru</mark> (henti jantung), evakuasi, APAR, downtime, BCP</div><div class="box k3"><b>Komunikasi</b><br>SBAR, handover, Team STEPPS, konflik, pasien &amp; keluarga</div></div>
-<h3>Data mutu, etika, digital</h3>
-<ul><li>Indikator, dashboard, tren, <mark>PDSA</mark> (Plan-Do-Study-Act), evidence-based</li><li>Etika/hukum: hak pasien, kerahasiaan, informed consent, perlindungan data</li><li>Digital: RME, <mark>SATUSEHAT</mark>, keamanan siber, <mark>audit trail</mark> (siapa-kapan-apa), tanda tangan elektronik, AI (tetap etis)</li></ul>
+<div class="sec y"><h2>4 · Kelompok Manajemen RS</h2>
+<p>7 bab: TKRS · KPS · MFK · PMKP · MRMIK · PPI · PPK (lihat tabel singkatan di bagian 1). Akreditasi di sini dipandang sebagai <mark>alat mendorong perbaikan mutu berkelanjutan</mark>, bukan sekadar kelengkapan dokumen.</p>
+<h3>Mengapa MRMIK penting bagi D3 RMIK?</h3>
+<ul><li>RM = <mark>sumber informasi utama</mark> tentang asuhan &amp; perkembangan pasien, serta media komunikasi penting antar-PPA</li><li>Data yang tepat membantu keputusan klinis &amp; kesinambungan pelayanan</li><li>Pengelolaan mencakup: registrasi, distribusi, pengisian, pengolahan, klaim, penyimpanan, mutu, transfer informasi</li><li>Kualitas data RM memengaruhi <mark>mutu, keselamatan, pelaporan, dan akreditasi</mark></li></ul>
+<h3>MRMIK: 16 standar, 4 tema</h3>
+<div class="grid"><div class="box k1"><b>Tema 1 · Manajemen informasi</b><br>MRMIK 1–4: proses informasi, sistem &amp; kompetensi, dokumen seragam, penyebaran tepat waktu</div><div class="box k2"><b>Tema 2 · Keamanan, kerahasiaan, RME, downtime</b><br>MRMIK 2.1, 2.2, 5, 13, 13.1</div><div class="box k3"><b>Tema 3 · Isi &amp; mutu RM</b><br>MRMIK 6–9 dan 12</div><div class="box k4"><b>Tema 4 · Kepemilikan, kerahasiaan, retensi</b><br>MRMIK 10–11</div></div>
+
+<h3>Tema 1 — Manajemen informasi (MRMIK 1–4)</h3>
+<p>RS merencanakan, mengelola, dan menyediakan informasi sesuai kebutuhan pengguna.</p>
+<div class="tw"><table><tr><th>Standar</th><th>Inti</th></tr>
+<tr><td class="k">MRMIK 1</td><td>proses manajemen informasi untuk kebutuhan internal dan eksternal</td></tr>
+<tr><td class="k">MRMIK 2</td><td>pengelolaan sistem informasi dan kompetensi pengguna</td></tr>
+<tr><td class="k">MRMIK 3</td><td>pengelolaan dokumen secara konsisten dan seragam</td></tr>
+<tr><td class="k">MRMIK 4</td><td>penyebaran informasi tepat waktu, dalam format yang sesuai</td></tr></table></div>
+<ul><li>Informasi harus dapat dipakai <mark>orang yang tepat, untuk tujuan yang tepat, pada waktu yang tepat</mark></li><li>Contoh keluaran: laporan kunjungan, morbiditas, mortalitas, indikator layanan, <mark>10 besar penyakit</mark></li><li>Data klinis &amp; nonklinis dapat diintegrasikan untuk mendukung keputusan</li><li>Petugas RMIK membantu menjaga <mark>definisi, konsistensi, kelengkapan, ketepatan</mark> pelaporan</li></ul>
+
+<h3>Tema 2 — keamanan, kerahasiaan &amp; RME</h3>
+<p><b>MRMIK 2.1 &amp; 2.2</b> menekankan perlindungan <mark>keamanan, kerahasiaan, privasi, integritas, ketersediaan</mark> data.</p>
+<ul><li>Tetapkan hak akses sesuai peran &amp; tanggung jawab; batasi siapa yang boleh melihat, memasukkan, mengubah, atau menghapus data</li><li>Pantau kepatuhan &amp; tindak lanjuti pelanggaran; lindungi data dari kehilangan, pencurian, kerusakan, penghancuran</li></ul>
+<div class="note">🔐 <b>Prinsip minimum kontrol akses</b>: akses <mark>tidak diberikan hanya karena seseorang bekerja di RS</mark> · akun individual, jangan bagi kata sandi · hak akses sesuai tugas, tinjau saat mutasi atau staf keluar · <mark>audit log</mark> menelusuri akses &amp; perubahan · contoh risiko: membuka RM tetangga tanpa alasan pelayanan.</div>
+<ul><li><b>MRMIK 5 — RME sepanjang episode</b>: dikelola sejak registrasi hingga pasien pulang, dirujuk, atau meninggal. Alur: registrasi → distribusi data → pengisian informasi klinis → pengolahan → klaim → penyimpanan → penjaminan mutu → transfer isi sesuai ketentuan. Unit penyelenggara RM &amp; petugas kompeten ditetapkan; keamanan &amp; kerahasiaan dijaga selama seluruh siklus.</li><li><b>MRMIK 13 &amp; 13.1 — SIMRS &amp; downtime</b>: RS mengelola teknologi informasi kesehatan, serta mengembangkan &amp; menguji program penanganan <mark>downtime</mark>. Siapkan prosedur saat sistem berhenti (terencana maupun tidak), latih staf memakai prosedur alternatif, lakukan <mark>backup terjadwal &amp; uji pemulihan data</mark>, jaga komunikasi lintas unit agar pelayanan tetap aman.</li></ul>
+<div class="note">🧪 <b>Simulasi: RME tidak dapat diakses</b>. SIMRS berhenti saat pasien IGD datang &amp; butuh pelayanan segera. (1) Siapa yang diberi tahu lebih dulu? (2) Bagaimana pencatatan sementara sesuai prosedur RS? (3) Bagaimana memastikan identitas &amp; kesinambungan informasi? (4) Apa yang dilakukan setelah sistem pulih agar data tidak hilang atau ganda?</div>
+
+<h3>Tema 3 — isi &amp; mutu RM</h3>
+<p>MRMIK 6–9 dan 12 menekankan RM yang <mark>seragam, memadai, dapat ditelusuri, dan dievaluasi</mark>.</p>
+<div class="tw"><table><tr><th>Standar</th><th>Inti</th><th>Peran RMIK / contoh</th></tr>
+<tr><td class="k">MRMIK 6</td><td>format seragam &amp; terkini; <mark>satu pasien satu nomor RM</mark>; formulir dan tata cara pengisian jadi acuan PPA; formulir dievaluasi &amp; diperbarui periodik</td><td>RM rawat jalan, rawat inap, IGD, penunjang diisi sesuai ketetapan RS; bantu temukan formulir tidak sesuai atau versi lama</td></tr>
+<tr><td class="k">MRMIK 7</td><td>isi RM ditetapkan RS sesuai kebutuhan asuhan &amp; peraturan: identitas pasien, informasi pendukung diagnosis &amp; dasar pengobatan/tindakan, hasil pemeriksaan &amp; pengobatan, <mark>ringkasan pulang</mark>, informasi kesinambungan asuhan antar-PPA</td><td>cek isi minimal terpenuhi</td></tr>
+<tr><td class="k">MRMIK 8</td><td>setiap entry dapat diidentifikasi <mark>siapa penulis dan kapan</mark> (identitas PPA, tanggal, waktu); prosedur koreksi kesalahan penulisan di RME; evaluasi hasil dokumentasi, temuan jadi perbaikan</td><td>cek catatan tanpa tanggal/waktu/penulis</td></tr>
+<tr><td class="k">MRMIK 9</td><td>kode, simbol, singkatan baku untuk cegah salah komunikasi; <mark>ICD-10</mark> untuk kode penyakit, <mark>ICD-9-CM</mark> untuk kode tindakan; evaluasi berkala penggunaan kode &amp; tindak lanjut; hindari singkatan ambigu atau tidak disetujui</td><td>audit ketepatan kode</td></tr>
+<tr><td class="k">MRMIK 12</td><td>pengkajian RM = bagian peningkatan kinerja RS; dilakukan berkala, <mark>paling sedikit setiap tahun</mark>; sampel mewakili PPA, jenis pelayanan, pasien dirawat &amp; pulang; fokus <mark>ketepatan waktu, kelengkapan, keterbacaan, keabsahan, informasi klinis</mark>; hasil dilaporkan ke pimpinan &amp; jadi dasar perbaikan</td><td>jalankan audit &amp; laporan</td></tr></table></div>
+
+<h3>Tema 4 — kepemilikan, kerahasiaan &amp; retensi</h3>
+<ul><li><b>MRMIK 10</b>: keamanan, kerahasiaan, kepemilikan RM dan privasi pasien; akses &amp; pelepasan informasi mengikuti <mark>otoritas dan ketentuan yang berlaku</mark></li><li><b>MRMIK 11</b>: RS menetapkan <mark>lama penyimpanan &amp; prosedur pemusnahan</mark>; informasi tertentu yang bernilai guna dapat ditetapkan disimpan permanen</li></ul>
+
+<h3>PMKP — data jadi pembelajaran</h3>
+<p>PMKP memakai data untuk mengetahui kinerja, mendeteksi masalah, dan memandu perbaikan. RMIK mendukung <mark>definisi data, ekstraksi, analisis, dan konsistensi laporan</mark>.</p>
+<ul><li>Indikator mutu ditetapkan-diukur-dilaporkan-dievaluasi; data harus <mark>valid &amp; dapat ditelusuri sumbernya</mark></li></ul>
+<div class="grid"><div class="box k1"><b>Validasi data indikator mutu</b> (agar hasil dapat dipercaya sebelum jadi keputusan)<ul><li>Definisi operasional &amp; numerator/denominator jelas</li><li>Telusuri sumber data, uji sampel terhadap bukti asal</li><li>Bandingkan hasil hitung dengan data sumber; dokumentasikan koreksi</li><li>Bila data berubah, jelaskan penyebab &amp; dampaknya terhadap tren</li></ul></div><div class="box k2"><b>Pelaporan insiden &amp; pembelajaran</b><ul><li>Kenali kategori insiden sesuai kebijakan &amp; definisi RS</li><li>Lapor lewat mekanisme berlaku; utamakan <mark>pembelajaran, bukan menyalahkan</mark></li><li>Investigasi &amp; tindakan korektif sesuai tingkat insiden</li><li><mark>Sentinel dianalisis akar masalah (RCA) maks. 45 hari</mark></li></ul></div></div>
+<div class="note">📊 <b>PMKP 9 — analisis insiden tiap 3 bulan</b>: tujuan deteksi <mark>pola, tren, variasi</mark> tak diinginkan · kelompokkan menurut jenis, lokasi, waktu, proses, atau faktor terkait · cari faktor sistem yang bisa diperbaiki · pantau apakah tindakan korektif mengurangi kejadian berulang.</div>
+
+<h3>TKRS · MFK · PPI · KPS · PPK — jembatan ke manajemen risiko</h3>
+<ul><li><b>TKRS</b>: peran pemilik/dewan pengawas, direktur, pimpinan, kepala unit · <b>MFK</b>: keselamatan lingkungan &amp; fasilitas, serta pengelolaan risiko terkait · <b>PPI</b>: pencegahan &amp; pengendalian infeksi dalam proses pelayanan</li><li><mark>Risk register</mark> mencatat: risiko, pengendalian, pemilik risiko, tindak lanjut</li><li><b>KPS</b>: kualifikasi, pendidikan staf, kredensial, kewenangan klinis sesuai peran · <b>PPK</b>: pendidikan dalam pelayanan kesehatan di RS; pelatihan RME, keamanan informasi, downtime sesuai peran staf</li></ul>
+<h3>Penilaian risiko proaktif</h3>
+<p>Risiko dikenali <mark>sebelum insiden terjadi</mark>; ditinjau berkala dan saat ada perubahan bermakna.</p>
+<div class="tl"><div><b>1</b>Pilih proses berisiko tinggi: identifikasi pasien, akses RME, downtime, pengiriman data</div><div><b>2</b>Petakan kemungkinan kejadian, dampak, dan kontrol yang sudah ada</div><div><b>3</b>Prioritaskan risiko menurut metode yang ditetapkan RS</div><div><b>4</b>Rencanakan mitigasi, penanggung jawab, tenggat, evaluasi efektivitas</div></div>
+<div class="note">🧪 <b>Latihan kelas (kelompok 3–4 orang, 5 menit)</b>. Kasus: petugas memakai akun rekan kerja untuk mempercepat input; data indikator mutu berbeda antara laporan &amp; sumber. (1) Sebut minimal 2 risiko. (2) Tentukan kontrol pencegahan &amp; cara mendeteksi masalah. (3) Tentukan bukti yang dapat ditunjukkan saat telusur akreditasi.</div>
+<div class="note">📝 <b>Ringkasan</b>: akreditasi = alat perbaikan mutu berkelanjutan · MRMIK menghubungkan tata kelola informasi, RME, mutu isi RM, keamanan, retensi · PMKP mengubah data jadi pembelajaran · TKRS, MFK, PPI membantu RS mengelola risiko sistematis · bagi RMIK: data lengkap, akurat, aman, tersedia, dapat dipertanggungjawabkan.</div>
 </div>
 
-<div class="sec p"><h2>6 · Paradigma &amp; Arah Baru 2026</h2>
-<div class="grid"><div class="box k1"><b>📄 Paradigma lama</b><br>fokus EP &amp; bukti administrasi; persiapan naik menjelang survei; sukses = dapat status</div><div class="box k3"><b>🌱 Yang diharapkan</b><br>dokumen = praktik nyata; konsisten tiap hari; hasil &amp; pengalaman pasien; temuan memperbaiki sistem</div></div>
-<div class="note">📝 Paradigma lama = <i>kecenderungan</i> yang diperbaiki, bukan berarti standar lama hanya soal dokumen.</div>
-<h3>3 dimensi arah 2026</h3>
-<ol><li><mark>Kepatuhan standar</mark>: ada kebijakan, SOP, bukti, petugas kompeten?</li><li><mark>Mutu proses</mark>: prosedur konsisten, risiko dikelola?</li><li><mark>Hasil klinis</mark>: kondisi membaik, komplikasi turun, pasien lebih aman?</li></ol>
-<div class="note">📢 Pengumuman Kemenkes <mark>24 Juli 2026</mark>: arah berbasis <mark>hasil klinis</mark>. <b>Belum otomatis</b> KMK 1596/2024 dicabut; tiga dimensi hanya cara memahami arah, <b>bukan kategori resmi</b>.</div>
-<h3>Contoh: resume medis</h3>
-<div class="tw"><table><tr><th>Orientasi</th><th>Pertanyaan</th><th>Bukti</th></tr>
-<tr><td class="k">Dokumen</td><td>Sudah ada SOP pengisian?</td><td>SOP, formulir, kebijakan, tanda tangan</td></tr>
-<tr><td class="k">Mutu proses</td><td>Diisi lengkap &amp; tepat waktu?</td><td>Hasil audit, ketepatan waktu, tindak lanjut</td></tr>
-<tr class="hot"><td class="k">Hasil</td><td>Membantu kesinambungan, keputusan klinis, kurangi masalah klaim?</td><td>Tren ketidaklengkapan, masalah klaim, evaluasi</td></tr></table></div>
-<h3>Peran tiap pihak</h3>
-<ul><li>Direksi: pimpin perbaikan berbasis data</li><li>Komite Mutu: analisis indikator &amp; insiden</li><li>Dokter &amp; perawat: pelayanan sesuai standar, evaluasi hasil</li><li><mark>Instalasi RMIK</mark>: mutu dokumentasi, kerahasiaan, ketersediaan, ketepatan informasi</li><li>Seluruh unit: akreditasi = kerja rutin</li></ul>
-<p>Acuan: KMK 1596/2024 · Kepdirjen HK.02.02/D/43961/2024 (pedoman survei) · pengumuman 24 Juli 2026.</p>
+<div class="sec l"><h2>5 · Pelayanan Berfokus pada Pasien</h2>
+<p><mark>Benang merah</mark>: setiap tahap pelayanan harus punya <b>bukti yang dapat ditelusuri di RM</b>. Standar ini menilai bagaimana RS menyediakan pelayanan yang terintegrasi &amp; aman, dibuktikan lewat dokumen, wawancara, observasi, dan telusur. RM penting tapi bukan satu-satunya bukti.</p>
+<div class="tl"><div><b>Masuk</b>AKP: akses, skrining, penerimaan, kesinambungan</div><div><b>Hak &amp; persetujuan</b>HPK: hak, informasi, persetujuan/penolakan</div><div><b>Pengkajian</b>PP: data awal &amp; kebutuhan pasien</div><div><b>Asuhan</b>PAP · PAB · PKPO: rencana, tindakan, obat, evaluasi</div><div><b>Edukasi</b>KE</div><div><b>Pulang/rujuk</b>kembali ke AKP</div></div>
+<h3>Apa yang ditekankan tiap standar</h3>
+<div class="tw"><table><tr><th>Standar</th><th>Poin standar</th></tr>
+<tr><td class="k">AKP</td><td>RS menyelaraskan kebutuhan asuhan dengan pelayanan yang tersedia · dimulai dari <mark>skrining</mark> (kenali kebutuhan &amp; urgensi) · pelayanan dikoordinasikan agar kesinambungan terjaga · rencana pemulangan &amp; rujukan = bagian kesinambungan · informasi harus mengikuti pasien saat pindah unit/fasilitas</td></tr>
+<tr><td class="k">HPK</td><td>hormati hak, nilai, kebutuhan, privasi · pasien &amp; keluarga dapat informasi sesuai &amp; kesempatan ikut memutuskan · jaga privasi &amp; kerahasiaan · persetujuan/penolakan didokumentasikan · kebutuhan khusus &amp; dukungan dikenali</td></tr>
+<tr><td class="k">PP</td><td>pengkajian sesuai kebutuhan &amp; jenis pelayanan · hasil jadi dasar rencana asuhan · perubahan kondisi → pengkajian ulang · dokumentasi jelas, tepat waktu, penulis dapat diidentifikasi</td></tr>
+<tr><td class="k">PAP</td><td>asuhan terkoordinasi sesuai kebutuhan &amp; standar profesi · rencana &amp; pelaksanaan saling terkait · respons dipantau, rencana dimodifikasi bila perlu · catatan lintas profesi mendukung komunikasi &amp; kesinambungan</td></tr>
+<tr><td class="k">PAB</td><td>anestesi &amp; bedah: proses terencana, aman, terdokumentasi · pengkajian &amp; persiapan sebelum tindakan tercatat · persetujuan dapat ditelusuri · catatan anestesi, operasi, pemantauan pascatindakan · terhubung dengan pasien, waktu, petugas penanggung jawab</td></tr>
+<tr><td class="k">PKPO</td><td>pengelolaan obat aman perlu informasi lengkap &amp; komunikasi antarpetugas · sesuai kebijakan RS · rekonsiliasi &amp; telaah obat sesuai standar · pemberian &amp; pemantauan respons dapat ditelusuri · kesalahan/masalah obat ditangani lewat mekanisme berlaku</td></tr>
+<tr><td class="k">KE</td><td>bantu pasien/keluarga memahami kondisi &amp; perawatan · sesuai kebutuhan, kemampuan, kondisi · bisa menyangkut diagnosis, tindakan, obat, perawatan, tindak lanjut · komunikasi efektif mendukung keputusan &amp; keselamatan · didokumentasikan sesuai kebijakan RS</td></tr>
+<tr><td class="k">Pulang/rujuk</td><td>perencanaan pulang/rujuk = bagian kesinambungan · rencana disiapkan sesuai kondisi &amp; kebutuhan · <mark>ringkasan pulang</mark> merangkum informasi penting episode perawatan · instruksi obat, kontrol, tanda bahaya, tindak lanjut dicatat · bila dirujuk, informasi relevan disiapkan</td></tr></table></div>
+<h3>Apa buktinya di RM?</h3>
+<div class="tw"><table><tr><th>Tahap</th><th>Bukti di rekam medis</th></tr>
+<tr><td class="k">AKP</td><td>skrining/triase &amp; alasan prioritas (sesuai jenis layanan), identitas &amp; waktu datang/penerimaan, keputusan penempatan/alur layanan, komunikasi/serah terima, rencana pulang/rujuk. Kesinambungan: catatan perpindahan/serah terima, ringkasan klinis untuk unit penerima, alasan rujukan, tujuan, &amp; informasi yang disertakan</td></tr>
+<tr><td class="k">HPK</td><td>formulir persetujuan tindakan sesuai &amp; terisi, catatan pemberian informasi + identitas pihak terlibat, dokumentasi penolakan bila terjadi; periksa tanggal/waktu, identitas, keterkaitan formulir dengan tindakan</td></tr>
+<tr><td class="k">PP</td><td>keluhan/riwayat &amp; data klinis relevan, hasil pemeriksaan, kebutuhan/risiko, tanggal-waktu-identitas PPA-autentikasi, pengkajian ulang saat kondisi berubah</td></tr>
+<tr><td class="k">PAP</td><td>rencana asuhan &amp; tujuan, catatan implementasi, pemantauan respons &amp; evaluasi, perubahan rencana beserta dasar klinis</td></tr>
+<tr><td class="k">PAB</td><td>(bila ada tindakan anestesi/bedah) pengkajian pra-anestesi/pra-bedah, persetujuan &amp; verifikasi wajib, catatan anestesi &amp; laporan operasi, pemantauan &amp; instruksi pascatindakan</td></tr>
+<tr><td class="k">PKPO</td><td>instruksi/resep &amp; identitas pemberi instruksi, catatan pemberian (obat, dosis, waktu, petugas), alergi/riwayat obat &amp; rekonsiliasi, pemantauan efek/respons/KTD</td></tr>
+<tr><td class="k">KE</td><td>topik &amp; waktu edukasi, identitas petugas, pasien/keluarga penerima, evaluasi pemahaman atau kebutuhan edukasi lanjutan</td></tr>
+<tr class="hot"><td class="k">Pulang/rujuk</td><td>ringkasan pulang/rujukan terautentikasi, diagnosis akhir-tindakan-terapi-kondisi saat pulang, instruksi tindak lanjut &amp; edukasi pulang, tujuan rujukan &amp; informasi klinis yang dikirim</td></tr></table></div>
+<h3>Pertanyaan telusur HPK (berorientasi proses)</h3>
+<ul><li>Apakah hak &amp; informasi yang relevan tercatat?</li><li>Apakah persetujuan/penolakan sesuai tindakan yang dilakukan?</li><li>Apakah akses terhadap informasi pasien dibatasi kepada pihak berwenang?</li><li>Apakah dokumen dapat ditemukan, dibaca, dan ditelusuri?</li></ul>
+<div class="note">✍️ Dokumentasi HPK harus memperlihatkan <mark>proses informasi dan keputusan, bukan sekadar tanda tangan</mark>.</div>
+<h3>RM sebagai bukti telusur</h3>
+<ul><li>Surveior menilai <mark>konsistensi dokumen dan praktik</mark>; dokumen harus sesuai dengan apa yang dilakukan</li><li>Wawancara staf/pasien &amp; observasi dapat menguji konsistensi catatan</li><li>Bukti: <mark>lengkap, terbaca, autentik, tepat waktu, mudah ditelusuri</mark> · jangan buat dokumentasi yang tidak mencerminkan pelayanan sebenarnya</li></ul>
+<h3>Contoh telusur satu pasien (latihan)</h3>
+<p>Ikuti satu episode dari pendaftaran sampai pulang:</p>
+<div class="tl"><div><b>Masuk</b>temukan skrining/triase &amp; identitas pasien</div><div><b>Hak</b>temukan persetujuan atau penolakan yang relevan</div><div><b>Pengkajian/asuhan</b>cocokkan pengkajian, rencana, tindakan, evaluasi</div><div><b>Obat/edukasi</b>cocokkan instruksi, pemberian obat, catatan edukasi</div><div><b>Pulang/rujuk</b>periksa ringkasan &amp; tindak lanjut</div></div>
+<h3>Kesalahan dokumentasi yang dikenali</h3>
+<p>Catatan tanpa tanggal/waktu atau identitas penulis · formulir tak lengkap atau tak sesuai tindakan · persetujuan tak dapat dikaitkan dengan tindakan · informasi obat, edukasi, atau tindak lanjut tak dapat ditelusuri · catatan antarbagian tak konsisten. <i>(Bahan belajar, bukan pengganti kebijakan resmi RS.)</i></p>
+<div class="note">✍️ <b>Peran RMIK</b>: bantu jaga kelengkapan &amp; keteraturan RM, dukung analisis kelengkapan &amp; ketepatan dokumentasi (sesuai kewenangan), jaga kerahasiaan &amp; akses sesuai hak, sampaikan temuan lewat jalur yang ditetapkan RS.</div>
+<div class="grid"><div class="box k1"><b>🧪 Latihan kelompok "Apa buktinya?" (5 menit)</b><ol><li>Pilih satu tahap: AKP, HPK, PP, PAP/PAB/PKPO, KE, atau pulang/rujuk</li><li>Tuliskan 3 bukti RM yang perlu ditelusuri</li><li>Sebut 1 risiko jika bukti tidak ada/tidak konsisten</li><li>Sebut siapa yang perlu dilibatkan untuk perbaikan</li></ol></div><div class="box k2"><b>🔑 Kunci diskusi</b><ul><li>Jawaban baik menghubungkan <mark>standar, proses pelayanan, dan bukti</mark></li><li>Bukti harus relevan dengan tahap &amp; jenis pelayanan</li><li><mark>Tidak semua pasien punya semua formulir</mark>: sesuaikan dengan layanan yang diterima</li><li>Gunakan standar, EP, dan kebijakan RS sebagai rujukan</li><li>Bila ragu, klarifikasi ke pembimbing/penanggung jawab</li></ul></div></div>
+<div class="note">📝 <b>Pesan utama</b>: RM adalah bukti penting proses pelayanan, <mark>bukan hanya kumpulan formulir</mark>; dokumentasi harus menggambarkan pelayanan yang benar-benar dilakukan; kelengkapan, keterbacaan, autentikasi, ketepatan waktu, konsistensi penting; mutu RM mendukung mutu pelayanan &amp; keselamatan pasien.</div>
 </div>
 
-<div class="sec bl"><h2>7 · Akreditasi Internasional &amp; LPA</h2>
-<ul><li><mark>ISQua / ISQua EEA</mark>: menilai <i>standar &amp; proses lembaga akreditasi</i>, <b>tidak</b> langsung mengakreditasi setiap RS</li><li><mark>JCI, Accreditation Canada, DNV</mark> dll: punya program &amp; menilai fasilitas langsung</li><li>Akreditasi internasional <mark>tidak menggantikan</mark> akreditasi nasional</li></ul>
-<div class="tw"><table><tr><th>Lembaga</th><th>Negara</th><th>Fokus</th></tr>
-<tr><td class="k">JCI</td><td>AS</td><td>keselamatan, tata kelola, obat, PPI, manajemen informasi</td></tr>
-<tr><td class="k">Accreditation Canada</td><td>Kanada</td><td>mutu, pengalaman pasien (Qmentum Global)</td></tr>
-<tr><td class="k">ACHS</td><td>Australia</td><td>kinerja, standar, keselamatan</td></tr>
-<tr><td class="k">DNV</td><td>Norwegia</td><td>manajemen risiko, tata kelola klinis, ISO 9001 (DIAS)</td></tr>
-<tr><td class="k">Temos</td><td>Jerman</td><td>mutu klinis, pengalaman pasien</td></tr></table></div>
-<p>Lainnya: NABH (India), JQHC (Jepang), GAHAR (Mesir), Qualicor Europe, GHA.</p>
-<h3>8 LPA Rumah Sakit (KMK 321/2026)</h3>
-<div class="chips"><div class="chip">KARS</div><div class="chip">LAFKI</div><div class="chip">LARS-DHP</div><div class="chip">LAM-KPRS</div><div class="chip">LARSI</div><div class="chip">BAMUTU RS</div><div class="chip">LAL-KES</div><div class="chip">LARSQI</div></div>
+<div class="sec p"><h2>6 · SKP &amp; Prognas</h2>
+<p><b>Fokus</b>: keselamatan pasien, mutu identitas, pencatatan, dan pelaporan. KMK 1596/2024 menetapkan standar; penerapan rinci mengikuti KMK, pedoman program, dan kebijakan RS.</p>
+<h3>Mengapa SKP penting?</h3>
+<ul><li>SKP diterapkan untuk <mark>mencegah insiden keselamatan pasien</mark> dan meningkatkan mutu pelayanan</li><li>Sasaran membantu RS memusatkan perbaikan pada bidang berisiko</li><li>PMIK mendukung lewat <mark>identitas yang benar &amp; RM yang dapat ditelusuri</mark></li></ul>
+<h3>SKP 1 — identifikasi (paling dekat dengan registrasi)</h3>
+<ul><li>RS menerapkan proses menjamin ketepatan identifikasi; kesalahan dapat memengaruhi <mark>diagnosis, pengobatan, tindakan, pelayanan</mark>; identifikasi konsisten sesuai prosedur, termasuk saat registrasi &amp; sebelum pelayanan</li><li>Minimal <mark>2 identitas</mark> (nama lengkap + tgl lahir; atau no. RM + identitas lain yang ditetapkan RS); <mark>nomor kamar/lokasi tempat tidur/posisi pasien bukan identitas</mark></li><li>Cocokkan dengan gelang, label, dokumen, sistem; bila beda → klarifikasi lewat alur resmi sebelum data dipakai; <mark>jangan menebak</mark> atau mengubah data tanpa dasar &amp; jejak koreksi</li><li><b>Registrasi</b> = titik awal mutu identitas: cek sudah terdaftar sebelum buat no. RM baru; ikuti prosedur pasien baru, pasien lama, koreksi data; data demografi konsisten &amp; bersumber dari dokumen yang diterima sesuai kebijakan</li><li><b>No. RM &amp; MPI</b>: no. RM = pengenal pasien di sistem RS; <mark>MPI (Master Patient Index)</mark> menghubungkan kunjungan pada satu identitas benar. Duplikasi memecah riwayat pelayanan; salah taut menaruh informasi pada pasien yang keliru</li></ul>
+<div class="grid"><div class="box k1"><b>Contoh risiko salah identifikasi</b><ul><li>Dua pasien bernama mirip</li><li>Label tercetak dengan no. RM tidak sesuai</li><li>Pasien lama dibuatkan nomor baru → RM terduplikasi</li><li>Data formulir berbeda dari data sistem</li></ul></div><div class="box k2"><b>Jika tidak cocok</b><ol><li><mark>Hentikan</mark>: jangan lanjutkan proses berisiko dengan identitas salah</li><li><mark>Klarifikasi</mark> ke petugas/unit berwenang sesuai prosedur</li><li><mark>Dokumentasikan</mark>: catat koreksi, pertahankan jejak perubahan</li><li>Laporkan insiden/KNC lewat mekanisme RS</li></ol></div><div class="box k3"><b>Bukti penerapan SKP 1</b><ul><li>Kebijakan/SPO identifikasi pasien &amp; registrasi</li><li>Catatan/bukti verifikasi identitas pada alur pelayanan</li><li>Hasil audit, temuan ketidaksesuaian, tindak lanjut</li></ul><i>Bukti spesifik disesuaikan dengan EP KMK dan dokumen RS.</i></div></div>
+<h3>SKP 2–6 &amp; peran PMIK</h3>
+<div class="grid"><div class="box k1"><b>SKP 2 Komunikasi efektif</b><ul><li>informasi jelas, tepat, dipahami penerima</li><li>konteks: serah terima, pelaporan hasil kritis</li><li>dokumentasi mendukung penelusuran informasi, waktu, penerima, tindak lanjut</li></ul></div><div class="box k2"><b>SKP 3 Obat waspada</b><ul><li>RS menerapkan proses meningkatkan keamanan obat yang perlu diwaspadai</li><li>catatan penggunaan obat konsisten dengan pelayanan &amp; kewenangan pencatat</li><li>PMIK dukung kelengkapan &amp; keterlacakan dokumen, <mark>bukan menggantikan keputusan klinis</mark></li></ul></div><div class="box k3"><b>SKP 4 Bedah/invasif</b><ul><li>proses RS memastikan pasien, sisi/lokasi, prosedur yang benar</li><li>dokumen pra &amp; pascatindakan konsisten dengan alur pelayanan</li><li>ketidaksesuaian identitas/dokumen diklarifikasi</li></ul></div><div class="box k4"><b>SKP 5 Infeksi</b><ul><li>RS berupaya mengurangi risiko infeksi akibat perawatan kesehatan</li><li>PPI mengikuti standar &amp; kebijakan RS</li><li>dokumentasi relevan membantu pemantauan, evaluasi, pelaporan</li></ul></div><div class="box k1"><b>SKP 6 Risiko jatuh</b><ul><li>RS menjalankan proses mengurangi risiko cedera akibat jatuh</li><li>pengkajian, intervensi, evaluasi dicatat petugas berwenang</li><li>PMIK dukung ketersediaan catatan utuh untuk pelayanan &amp; audit</li></ul></div></div>
+<div class="note">🔑 <b>4 pesan SKP untuk PMIK</b>: (1) gunakan minimal 2 identitas sesuai prosedur RS · (2) jangan pakai nomor kamar/tempat tidur sebagai identitas · (3) cegah duplikasi &amp; salah taut no. RM lewat proses sah · (4) dokumentasi lengkap, akurat, dapat ditelusuri, rahasia.</div>
+<h3>Prognas — 6 Program Nasional</h3>
+<p>RS melaksanakan program pemerintah &amp; mendukung target pembangunan kesehatan nasional. Pelaksanaan dipantau &amp; dievaluasi sesuai standar dan pedoman. PMIK mendukung kualitas data lewat <mark>pencatatan, validasi, dan pelaporan</mark> sesuai kewenangan.</p>
+<div class="grid"><div class="box k1"><b>Prognas 1 · Ibu &amp; bayi</b><br>standar mencakup program <mark>PONEK 24 jam/7 hari</mark>; dokumentasi mengikuti alur klinis &amp; kebijakan RS; PMIK dukung kelengkapan RM &amp; data evaluasi</div><div class="box k2"><b>Prognas 2 · TB/TBC</b><br>RS mendukung penanggulangan TB sesuai pedoman; identitas, diagnosis, variabel program konsisten dengan sumber; lapor lewat aplikasi/format/tenggat resmi; <mark>jangan buat atau ubah data berdasar asumsi</mark></div><div class="box k3"><b>Prognas 3 · HIV/AIDS</b><br><mark>kerahasiaan utama</mark>; pencatatan &amp; pelaporan mengikuti pedoman &amp; aturan; data hanya diakses pihak berwenang; PMIK jaga keterlacakan tanpa membuka informasi ke pihak tak berhak</div><div class="box k4"><b>Prognas 4 · Stunting &amp; wasting</b><br>data pengukuran &amp; status pasien dari dokumentasi sah; konsistensi <mark>satuan, tanggal, variabel</mark> penting untuk analisis tren</div><div class="box k1"><b>Prognas 5 · KB RS</b><br>dokumentasi mencerminkan pelayanan yang benar-benar diberikan &amp; tindak lanjutnya; PMIK dukung kelengkapan catatan &amp; rekap; pelaporan sesuai definisi, format, kewenangan</div><div class="box k2"><b>Prognas 6 · Resistansi antimikroba</b><br>RS menjalankan program pengendalian sesuai standar; data penggunaan antimikroba &amp; pemeriksaan dicatat petugas berwenang; PMIK dukung keterlacakan dokumen untuk audit, evaluasi, pelaporan</div></div>
+<h3>Peran PMIK di Prognas</h3>
+<ul><li>Pastikan data bersumber dari <mark>dokumentasi yang sah</mark></li><li>Periksa kelengkapan &amp; konsistensi variabel yang diperlukan program</li><li>Dukung ketepatan kode, periode, unit, definisi pelaporan sesuai ketentuan</li><li>Jaga kerahasiaan &amp; batasi akses sesuai kewenangan</li></ul>
+<h3>Alur data kasus TB</h3>
+<div class="tl"><div><b>1</b>Verifikasi identitas pasien sesuai prosedur</div><div><b>2</b>Pakai diagnosis &amp; informasi dari dokumentasi tenaga berwenang</div><div><b>3</b>Petugas terkait melengkapi variabel program sesuai pedoman &amp; kewenangan</div><div><b>4</b>Periksa kelengkapan, konsistensi, kemungkinan duplikasi</div><div><b>5</b>Laporkan lewat <mark>alur resmi</mark> &amp; tindak lanjuti umpan balik</div></div>
+<h3>Checklist mutu data PMIK ✅</h3>
+<ul><li>Identitas konsisten &amp; tidak terduplikasi</li><li>Variabel program lengkap &amp; sesuai sumber yang sah</li><li>Tanggal, unit, periode, format sesuai ketentuan</li><li>Ada proses validasi, koreksi, jejak perubahan</li><li>Akses &amp; pengiriman data sesuai kewenangan</li></ul>
+<div class="note">🧪 <b>Latihan kasus</b>: (1) dua pasien nama mirip, no. RM pada label berbeda dari sistem: langkah yang tepat? (2) data kasus TB belum lengkap untuk pelaporan: siapa yang perlu diklarifikasi &amp; apa yang diperiksa? <br><b>Pesan kunci</b>: identitas benar melindungi pasien; data lengkap &amp; akurat mendukung program nasional.</div>
 </div>
 
-<div class="sec g"><h2>8 · SNARS Edisi 1 (berlaku Jan 2018)</h2>
-<ul><li>Sebelumnya standar dinamai per tahun, <mark>belum ada standar nasional</mark> → KARS susun SNARS</li><li>Surat KARS 1970/KARS/XI/2017 · Permenkes 34/2017 (dicabut Permenkes 12/2020)</li></ul>
-<h3>16 bab</h3>
-<div class="chips"><div class="chip"><b>SKP</b>Sasaran Keselamatan</div><div class="chip"><b>ARK</b>Akses &amp; Kontinuitas</div><div class="chip"><b>HPK</b>Hak Pasien</div><div class="chip"><b>AP</b>Asesmen</div><div class="chip"><b>PAP</b>Asuhan</div><div class="chip"><b>PAB</b>Anestesi &amp; Bedah</div><div class="chip"><b>PKPO</b>Farmasi &amp; Obat</div><div class="chip"><b>MKE</b>Komunikasi &amp; Edukasi</div><div class="chip"><b>PMKP</b>Mutu &amp; Keselamatan</div><div class="chip"><b>PPI</b>Infeksi</div><div class="chip"><b>TKRS</b>Tata Kelola</div><div class="chip"><b>MFK</b>Fasilitas</div><div class="chip"><b>KKS</b>Kompetensi Staf</div><div class="chip" style="background:var(--yel)"><b>MIRM ⭐</b>Informasi &amp; Rekam Medis</div><div class="chip"><b>Prognas</b>AKI/AKB, HIV, TB, PRA, geriatri</div><div class="chip"><b>IPKP</b>Pendidikan di RS</div></div>
-<div class="note">🔢 RS Pendidikan <mark>16 bab</mark> · RS non pendidikan <mark>15 bab</mark> (tanpa IPKP).</div>
-<h3>Nama bab lama → baru</h3>
-<p>APK→<b>ARK</b> · PP→<b>PAP</b> · MPO→<b>PKPO</b> · PPK→<b>MKE</b> · TKP→<b>TKRS</b> · KPS→<b>KKS</b> · MKI→<b>MIRM</b> · SMDGs→<b>Program Nasional</b></p>
-<h3>Elemen penilaian <mark>R D O S W</mark></h3>
-<div class="tw"><table><tr><th>Kode</th><th>Arti</th><th>Contoh</th></tr>
-<tr><td class="k">R</td><td>Regulasi</td><td>kebijakan, SPO, pedoman, SK Direktur, program</td></tr>
-<tr><td class="k">D</td><td>Dokumen</td><td>berkas RM, laporan, notulen, hasil audit, ijazah</td></tr>
-<tr><td class="k">O</td><td>Observasi</td><td>dilihat langsung surveior</td></tr>
-<tr><td class="k">S</td><td>Simulasi</td><td>staf memperagakan atas permintaan surveior</td></tr>
-<tr><td class="k">W</td><td>Wawancara</td><td>pimpinan, PPA, staf, pasien, keluarga</td></tr></table></div>
-<h3>Surveior</h3>
-<ul><li>Manajemen (ahli perumahsakitan) · Medis (dokter spesialis) · Keperawatan · Lainnya (<mark>ahli rekam medis</mark>, apoteker, bila survei terfokus)</li><li>Pembagian: Manajemen → PKPO, PMKP, TKRS, MFK, KKS · Medis → ARK, AP, PAP, PAB, Prognas, IPKP · Perawat → HPK, MKE, PPI, SKP, <mark>MIRM</mark></li></ul>
-</div>
-
-<div class="sec l"><h2>9 · STARKES &amp; KMK 1596/2024</h2>
-<p><mark>STARKES = Standar Akreditasi Kesehatan</mark> (untuk RS: Standar Akreditasi Rumah Sakit). <b>Regulasi akreditasi</b> = aturan hukum kewajiban &amp; pelaksanaan; <b>STARKES</b> = standar acuan penilaian.</p>
-<ol><li>UU 17/2023 (landasan utama)</li><li>PP 28/2024 (pelaksanaan UU)</li><li>Permenkes 12/2020 (masih tercatat berlaku, dibaca bersama aturan baru)</li><li>KMK 1596/2024 (ditetapkan 4 Okt 2024, cabut KMK 1128/2022)</li></ol>
-<h3>5 perubahan penting</h3>
-<div class="grid"><div class="box k1"><b>1 · Penyesuaian UU 2023</b><br>RS perbarui regulasi, SOP, dokumen mutu</div><div class="box k2"><b>2 · Tata kelola klinis</b><br>mutu tanggung jawab semua; audit klinis, indikator, insiden</div><div class="box k3"><b>3 · Transformasi digital</b><br>tata kelola data, kualitas RME, interoperabilitas</div><div class="box k4"><b>4 · Berbasis risiko</b><br>identifikasi → analisis → kendali (klinis, TI, bencana)</div><div class="box k1"><b>5 · Budaya mutu</b><br>kerja harian, bukan kegiatan 5 tahunan</div></div>
-<div class="note">💡 KMK 1596/2024 <mark>bukan perubahan total</mark>, tapi <mark>penyempurnaan &amp; penguatan</mark>.</div>
-<h3>Dampak untuk RMIK (peran semakin strategis)</h3>
-<p>Mutu data pasien · data indikator mutu · dukung keputusan manajemen · pelaporan nasional · keamanan &amp; kerahasiaan · implementasi RME · <mark>sumber evidence saat survei</mark></p>
-<h3>Perbandingan 1128/2022 → 1596/2024</h3>
-<div class="tw"><table><tr><th>Aspek</th><th>2022</th><th>2024</th></tr>
-<tr><td class="k">Dasar hukum</td><td>sebelum UU 2023</td><td>selaras UU 17/2023 &amp; PP 28/2024</td></tr>
-<tr><td class="k">Fokus</td><td>mutu &amp; keselamatan</td><td>+ transformasi layanan &amp; tata kelola</td></tr>
-<tr><td class="k">Tata kelola</td><td>kepatuhan standar</td><td>good clinical governance &amp; risk management</td></tr>
-<tr><td class="k">Digitalisasi</td><td>belum kuat</td><td>menonjol: informasi kesehatan &amp; digital</td></tr>
-<tr><td class="k">Keselamatan</td><td>SKP standar utama</td><td>+ budaya keselamatan (lebih sistemik)</td></tr>
-<tr><td class="k">Manajemen risiko</td><td>ada, belum utama</td><td>terintegrasi (<i>risk-based organization</i>)</td></tr>
-<tr><td class="k">Program Nasional</td><td>prioritas saat itu</td><td>selaras kebijakan terbaru</td></tr>
-<tr><td class="k">Indikator mutu</td><td>pengumpulan</td><td>data untuk perbaikan (<i>evidence-based</i>)</td></tr>
-<tr><td class="k">PPI</td><td>penting pasca pandemi</td><td>dipertahankan &amp; disempurnakan</td></tr>
-<tr><td class="k">Bencana</td><td>salah satu EP</td><td>hospital resilience &amp; emergency preparedness</td></tr>
-<tr class="hot"><td class="k">RMIK</td><td>dokumentasi pelayanan</td><td>integrasi informasi &amp; kualitas data (<mark>peran RMIK strategis</mark>)</td></tr>
-<tr><td class="k">Survei</td><td>telusur implementasi</td><td>telusur budaya mutu &amp; praktik nyata</td></tr></table></div>
-</div>
-
-<div class="sec y"><h2>10 · Kesimpulan, Latihan &amp; Hafalan Cepat</h2>
-<ul><li>SNARS Edisi 1 (2018): standar nasional pertama, 16 bab (15 non pendidikan)</li><li>Penilaian: <mark>R, D, O, S, W</mark> oleh surveior manajemen, medis, keperawatan</li><li>STARKES = <mark>KMK 1596/2024</mark>, +2 standar, +17 EP</li><li>Arah: tata kelola klinis → risiko → digital → budaya mutu → <mark>hasil klinis</mark></li><li>RMIK = penyedia data mutu &amp; evidence survei</li></ul>
+<div class="sec y"><h2>7 · Poin Kunci &amp; Hafalan</h2>
+<ul><li>Akreditasi mengakui mutu; standar terbagi <mark>4 kelompok</mark> (228 standar, 806 EP); penilaian pada <mark>EP</mark></li><li>Skor: <mark>TL 10 · TS 5 · TT 0 · TDD</mark>; bukti harus ada di <mark>dokumen dan di lapangan</mark></li><li>Pasca: <b>14 → 21 → 45 hari</b>, ulang 3–6 bulan untuk standar &lt;80%</li><li>MRMIK menghubungkan tata kelola informasi, RME, mutu isi RM, keamanan, retensi · PMKP mengubah data jadi pembelajaran</li><li>Pertanyaan inti telusur: <mark>“Apa buktinya di rekam medis?”</mark></li></ul>
 <h3>Jembatan hafalan 🧠</h3>
-<ul><li>Akreditasi = <b>P-P-S-M</b>: Pengakuan, Penilaian, Standar, Mutu</li><li>Tahun kunci: <b>1995</b> mulai · <b>2018</b> SNARS · <b>2022</b> KMK 1128 · <b>2024</b> STARKES · <b>2026</b> arah hasil klinis</li><li>Insiden: <b>N</b>yaris (KNC) → <b>T</b>idak cedera (KTC) → <b>T</b>idak diharapkan (KTD) → Sentinel</li></ul>
-<h3>Latihan &amp; diskusi</h3>
-<ol><li>Jelaskan pengertian akreditasi RS (KMK 1596/2024) + 4 kata kunci.</li><li>Urutkan perkembangan akreditasi 1995–2024, jelaskan satu pola.</li><li>Persamaan struktur standar 2022 dan 2024?</li><li>Kelompok yang bertambah paling besar di 2024?</li><li>Tiga perubahan 2024 &amp; satu yang paling terkait RM.</li><li>Beda regulasi akreditasi vs STARKES?</li><li>Mengapa pendekatan berbasis risiko &amp; digitalisasi memperkuat peran RMIK?</li><li>Evidence RMIK apa untuk survei, dilihat dari R, D, O, S, W?</li></ol>
+<ul><li>Metode penilaian = <b>T-O-W-S</b>: Telaah dokumen, Observasi, Wawancara, Simulasi</li><li>Angka pasca: <b>14 · 21 · 45</b> hari (lapor · sertifikat · PPS)</li><li>MRMIK tema: <b>1</b> informasi (1–4) · <b>2</b> keamanan/RME (2.1, 2.2, 5, 13, 13.1) · <b>3</b> isi RM (6–9, 12) · <b>4</b> retensi (10–11)</li><li>SKP 1 gagal cocok: <b>Hentikan → Klarifikasi → Dokumentasikan → Laporkan</b></li><li>Mutu data PMIK: identitas · variabel · tanggal/unit/periode · validasi &amp; jejak · akses</li></ul>
 </div>
-<p class="foot">Sumber: PDF materi Pertemuan IX, Darsono, A.Md.PerKes., S.ST., MHPM (13 Okt 2026)</p>
+
+<div class="sec g"><h2>8 · Acuan &amp; Catatan Penggunaan</h2>
+<ul><li>Sumber utama: <b>KMK RI No. HK.01.07/MENKES/1596/2024</b> tentang Standar Akreditasi Rumah Sakit</li><li>Kerangka umum: Lampiran Bab I–II (tujuan, kelompok standar, proses akreditasi; halaman dokumen 4–14)</li><li>Kelompok Manajemen RS: Lampiran Bab III (TKRS, PMKP, MRMIK; antara lain hal. 15–18, 140-an, 149–171)</li><li>Kelompok Berfokus pada Pasien: Lampiran Bab III bagian B (AKP, HPK, PP, PAP, PAB, PKPO, KE)</li><li>SKP &amp; Prognas: Lampiran kelompok SKP dan kelompok Program Nasional</li></ul>
+<div class="note">⚠️ Materi ini ringkasan pembelajaran D3 RMIK. Untuk praktik, gunakan <mark>naskah KMK lengkap</mark> (maksud, tujuan, EP resmi), pedoman program terkini, dan kebijakan/SPO RS. Status peraturan dapat dicek lewat JDIH Kemenkes.</div>
+</div>
+<p class="foot">Sumber: PDF materi Pertemuan X, Darsono, A.Md.PerKes., S.ST., MHPM (15 Okt 2026) · acuan KMK 1596/2024</p>
 </div>
 <div class="bar b"></div>
 </body>
